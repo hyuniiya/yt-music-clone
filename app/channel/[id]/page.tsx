@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const page = (props) => {
-  return (
-    <div>channel/[{props.params.id}]</div>
-  )
+interface ChannelPageProps {
+  params: {
+    id: string;
+  };
 }
 
-export default page
+const page = (props: ChannelPageProps) => {
+  return <div>channel/[{props.params.id}]</div>;
+};
+
+export default page;
