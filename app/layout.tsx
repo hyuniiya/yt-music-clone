@@ -2,7 +2,8 @@ import { ThemeProvider } from "@/providers/themeProvidr";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/Sidebar"
+import Sidebar from "@/components/Sidebar";
+import PlayWrapper from "@/components/player/PlayerWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,15 +21,14 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Sidebar>
-            {children}
-            </Sidebar>
-          </ThemeProvider>
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Sidebar>{children}</Sidebar>
+          <PlayWrapper />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -53,7 +53,7 @@ const PlayListHead = ({ playlist = {} } = {}) => {
           className={"w-[85px] text-[14px]"}
           icon={<FiPlay />}
           label="재생"
-          onClick={onClickPlayList}
+          // onClick={onClickPlayList}
         />
         <DarkButton
           className={"w-[135px] text-[14px]"}
