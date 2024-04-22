@@ -8,7 +8,7 @@ import { FiThumbsUp } from "react-icons/fi";
 import { FiMoreVertical } from "react-icons/fi";
 import IconButton from "./elements/IconButton";
 import { useRouter } from "next/navigation";
-// import usePlayerState from "@/hooks/usePlayerState";
+import usePlayerState from "@/hooks/usePlayerState";
 
 interface SongCardRowExpandProps {
   song: Song;
@@ -17,15 +17,15 @@ interface SongCardRowExpandProps {
 const SongCardRowExpand: React.FC<SongCardRowExpandProps> = ({ song }) => {
   const { channel, channelId } = song;
   const { push } = useRouter();
-  // const { addSongList } = usePlayerState();
+  const { addSongList } = usePlayerState();
 
   const onClickChannel = () => {
     push(`/channel/${channelId}`);
   };
 
-  // const onClickPlay = () => {
-  //   addSongList([song]);
-  // };
+  const onClickPlay = () => {
+    addSongList([song]);
+  };
 
   return (
     <article
@@ -35,7 +35,7 @@ const SongCardRowExpand: React.FC<SongCardRowExpandProps> = ({ song }) => {
       <div className=" w-[48px] h-[48px] relative">
         <Image src={song.imageSrc} alt="img" fill className=" object-cover" />
         <section
-          // onClick={onClickPlay}
+          onClick={onClickPlay}
           className="hidden group-hover:flex absolute top-0 w-[48px] h-[48px] items-center justify-center bg-black
         cursor-pointer
         "

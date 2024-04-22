@@ -6,8 +6,10 @@ import { useRouter } from "next/navigation";
 import { MdMoreVert } from "react-icons/md";
 import { FiPlay } from "react-icons/fi";
 import IconButton from "./elements/IconButton";
+import usePlayerState from "@/hooks/usePlayerState";
 
-const PlayListCard = ({ playlist }) => {
+const PlayListCard = ({ playlist = {} } = {}) => {
+  const { addSongList } = usePlayerState();
   const { push } = useRouter();
   const { id, owner, playlistName, songList } = playlist;
 
@@ -18,8 +20,10 @@ const PlayListCard = ({ playlist }) => {
     push(`/playlist?list=${id}`);
   };
 
-  const onClickPlay = () => {
+  const onClickPlay = (e) => {
+    e.stopPropagation();
     // Todo play
+    addSongList(songList);
   };
 
   return (
