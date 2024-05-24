@@ -61,7 +61,7 @@ React, Next.js 14 AppRouter, Typescript, zustand, TailwindCss, RadixUI, Shadcn, 
 
 ## 🛠 배포링크
 
-yt-music-clone-black.vercel.app
+[yt-music-clone-black.vercel.app](https://yt-music-clone-black.vercel.app/)
 
 </br>
 
