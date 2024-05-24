@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Youtube Music 클론 웹페이지
 
-## Getting Started
+</br>
 
-First, run the development server:
+## 📁 폴더구조
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+📦app
+ ┣ 📂(site)
+ ┃ ┣ 📂components
+ ┃ ┃ ┗ 📜Category.jsx
+ ┃ ┣ 📜error.tsx
+ ┃ ┣ 📜layout.tsx
+ ┃ ┣ 📜loading.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📂channel
+ ┃ ┣ 📂[id]
+ ┃ ┃ ┣ 📜error.tsx
+ ┃ ┃ ┣ 📜layout.tsx
+ ┃ ┃ ┣ 📜loading.tsx
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┗ 📂components
+ ┃ ┃ ┗ 📜ChannelHead.jsx
+ ┣ 📂explore
+ ┃ ┣ 📂components
+ ┃ ┃ ┗ 📜Category.jsx
+ ┃ ┣ 📜error.tsx
+ ┃ ┣ 📜layout.tsx
+ ┃ ┣ 📜loading.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📂library
+ ┃ ┣ 📂components
+ ┃ ┃ ┗ 📜Category.jsx
+ ┃ ┣ 📜error.tsx
+ ┃ ┣ 📜layout.tsx
+ ┃ ┣ 📜loading.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📂playlist
+ ┃ ┣ 📜error.tsx
+ ┃ ┣ 📜layout.tsx
+ ┃ ┣ 📜loading.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📜error.tsx
+ ┣ 📜favicon.ico
+ ┣ 📜globals.css
+ ┣ 📜layout.tsx
+ ┗ 📜loading.tsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 개발환경
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+React, Next.js 14 AppRouter, Typescript, zustand, TailwindCss, RadixUI, Shadcn, react-spinners, react-icons
 
-## Learn More
+## 💻 Repo소개
 
-To learn more about Next.js, take a look at the following resources:
+React, TypeScript, TailwindCss, RadixUI, Shadcn, react-spinners, react-icons 를 이용해 다양한 애니메이션과 반응형으로 디자인
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+</br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠 배포링크
 
-## Deploy on Vercel
+yt-music-clone-black.vercel.app
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+</br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 배운점
+
+- [x] Next.js 14 라우팅 시스템을 이해하고, 이를 통해 프로젝트 구조를 잡는 방법을 익혔습니다.
+- [x] Zustand 도구를 사용해서 플레이어의 전역 상태관리를 익혔습니다.
+- [x] Suspense를 이용한 데이터 패칭 및 스트리밍 기법을 익혔습니다.
+- [x] CSR, SSR의 렌더링 방식을 학습하고, 때에 맞는 활용법을 익혔습니다.
