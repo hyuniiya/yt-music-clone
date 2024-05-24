@@ -55,13 +55,13 @@ React, Next.js 14 AppRouter, Typescript, zustand, TailwindCss, RadixUI, Shadcn, 
 
 ## 💻 Repo소개
 
-React, TypeScript, TailwindCss, RadixUI, Shadcn, react-spinners, react-icons 를 이용해 다양한 애니메이션과 반응형으로 디자인
+스트리밍 음악 서비스를 사용자에게 제공합니다.
 
 </br>
 
 ## 🛠 배포링크
 
-yt-music-clone-black.vercel.app
+[yt-music-clone-black.vercel.app](https://yt-music-clone-black.vercel.app/)
 
 </br>
 
